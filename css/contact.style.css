@@ -1,0 +1,397 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* GENERAL RESET */
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+  height: 55px;
+  background-color: #a1c74d;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.infos :last-child {
+  text-transform: uppercase;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .langues {
+  padding-left: 34px;
+}
+
+header .langues a {
+  margin-right: 10px;
+}
+
+header .infos {
+  margin-left: auto;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+header .infos a {
+  align-items: center;
+}
+
+.infos img {
+  margin-right: 10px;
+}
+
+.social img {
+  color: #fff;
+  padding: 4px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.social {
+  margin-left: 60px;
+  margin-right: 40px;
+}
+
+header .langues img:hover, .social img:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+}
+
+/* MENU */
+
+nav {
+  padding-right: 100px;
+}
+
+.menu-list {
+  height: 107px;
+}
+
+nav .menu-list{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 34px;
+  margin-right: auto;
+  order: -1;
+}
+
+.menu-list li {
+  padding-right: 34px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #a1c74d;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.menu-list a.active {
+  border-bottom: 3px solid #a1c74d;
+}
+
+.menu-list li a:hover {
+  border-bottom: 3px solid #a1c74d;
+  transition: 0.3s;
+}
+
+.social img {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* CONTENU */
+
+.conteneur {
+    border-top: 2px solid #a1c74d;
+    width:100%;
+}
+
+.conteneur-gauche h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #a1c74d;
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.conteneur {
+  display: flex;
+}
+
+.conteneur-droite h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #a1c74d;
+    margin-bottom: 70px;
+    width: 400px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.conteneur-droite {
+  align-items: right;
+  margin-left: 100px;
+}
+
+form {
+    width: 760px;
+}
+
+select {
+    border: 1px solid #d8d8d8;
+}
+
+form input {
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    height: 52px;
+    font-size: 20px;
+    text-indent: 10px;
+    width: 370px;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+form input[type=submit] {
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a1c74d;
+    width: 760px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 760px;
+    height: 154px;
+    font-size: 20px;
+    text-indent: 10px;
+    font-family: "roboto";
+    border: 1px solid #d8d8d8;
+    margin-top: 40px;
+}
+
+form select {
+    width: 760px;
+    height: 52px;
+    font-size: 20px;
+    color: #8d8d8d;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  height: 280px;
+  background-color: #a1c74d;
+  color: #fff;
+}
+
+.conteneur-newsletter {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter h1 {
+  font-size: 35px;
+  padding-top: 25px;
+}
+
+.texte-maj {
+  text-transform: uppercase;
+}
+ 
+.conteneur-newsletter img:last-child {
+  float: right;
+  margin-top: -145px;
+  padding-left: 362px;
+  padding-right: auto;
+}
+
+.newsletter p {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.conteneur-newsletter :nth-child(5) {
+  float: left;
+}
+
+.newsletter input[type=email] {
+  border: none;
+  border-radius: 2px;
+  height: 35px;
+  border: 2px solid #6b8927;
+  margin-top: 25px;
+  width: 330px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.newsletter input[type=submit] {
+  background-color: #6b8927;
+  border: none;
+  width: 130px;
+  color: white;
+  height: 41px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-left: 14px;
+}
+
+input[type=submit]:hover {
+  transition: 0.2s;
+  opacity: 0.7;
+}
+
+input[type=submit]:active {
+  transform: scale(0.95);
+}
+ 
+/* FOOTER */
+
+.footer {
+  color: #fff;
+  height: 220px;
+  background-color: #b8bbbe;
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.footer ul {
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin: 100px;
+}
+
+.footer .titre {
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.footer .conteneur-footer ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer p {
+  position: absolute;
+  bottom: 5px;
+  left: 25%;
+  right: 25%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1650px) {
+  form {
+    width: 600px;
+    display: inline;
+  }
+  form select {
+    width: 370px;
+    margin-left: 5px;
+  }
+  textarea {
+    width: 370px;
+    margin-left: 5px;
+  }
+  form input[type=submit] {
+    width: 370px;
+    margin-left: 5px;
+  }
+  .conteneur-droite h1 {
+    margin-left: -20px;
+  }
+
+}
